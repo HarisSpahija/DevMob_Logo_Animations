@@ -1,0 +1,42 @@
+@keyframes crossAnimation {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: -53100px 0px;
+    }
+  }
+  .crossToBow {
+    animation-fill-mode: forwards;
+    animation-duration: 1500ms;
+    animation-timing-function: steps(90);
+    width: 590px;
+    height: 592px;
+    background-repeat: no-repeat;
+    padding: 10px;
+  }
+  .crossToBow.play {
+    animation-name: crossAnimation;
+  }
+
+  @keyframes barAnimation {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+    background-position: -52560px 0px;
+    }
+  }
+  .barToBow {
+    animation-fill-mode: forwards;
+    animation-duration: 1500ms;
+    animation-timing-function: steps(90);
+    width: 584px;
+    height: 592px;
+    background-repeat: no-repeat;
+    padding: 10px;
+  }
+  .barToBow.play {
+    animation-name: barAnimation;
+  }
+  
